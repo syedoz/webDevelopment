@@ -1,0 +1,17 @@
+:root {
+    --themeColor: #1e202f;
+}
+
+.myPara {
+    font-size: 70px;
+    margin-top: 90px;
+    margin-left: 60px;
+    color: var(--themeColor);
+}
+
+.div {
+    font-size: 60px;
+    margin-top: 80px;
+    margin-left: 40px;
+    color: var(--themeColor);
+}

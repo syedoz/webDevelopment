@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Riverside Bistro — Menu</title>
+</head>
+<body>
+
+  <!-- Header with restaurant name and navigation -->
+
+  <header>
+    <h1>Riverside Bistro</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Welcome / intro -->
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Welcome to Riverside Bistro — simple, fresh dishes made daily. Open from 9am to 10pm.</p>
+      <p><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" alt="Restaurant interior" /></p>
+    </section>
+
+```
+<!-- Menu section with a table of dishes -->
+<section id="menu">
+  <h2>Menu</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Dish</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grilled Salmon</td>
+        <td><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=120" alt="salmon" /> Pan-seared salmon with lemon butter and seasonal vegetables.</td>
+        <td>$18.50</td>
+      </tr>
+      <tr>
+        <td>Margherita Pizza</td>
+        <td><img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=120" alt="pizza" /> Classic pizza with tomato, fresh mozzarella and basil.</td>
+        <td>$12.00</td>
+      </tr>
+      <tr>
+        <td>Caesar Salad</td>
+        <td><img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36?w=120" alt="salad" /> Crisp romaine, parmesan, croutons and house dressing.</td>
+        <td>$9.50</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Specials as an ordered list -->
+<section id="specials">
+  <h2>Today's Specials</h2>
+  <ol>
+    <li>Beef Bourguignon — served with mashed potatoes</li>
+    <li>Lobster Roll — with a side salad</li>
+    <li>Chocolate Mousse — dark chocolate with whipped cream</li>
+  </ol>
+</section>
+
+<!-- Reservation form -->
+<section id="reserve">
+  <h2>Make a Reservation</h2>
+  <form action="#" method="post">
+    <p>
+      <label for="res-name">Name:</label><br />
+      <input id="res-name" name="name" type="text" />
+    </p>
+    <p>
+      <label for="res-phone">Phone:</label><br />
+      <input id="res-phone" name="phone" type="tel" />
+    </p>
+    <p>
+      <label for="res-date">Reservation Date:</label><br />
+      <input id="res-date" name="date" type="date" />
+    </p>
+    <p>
+      <label for="res-people">Party Size:</label><br />
+      <select id="res-people" name="people">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5+</option>
+      </select>
+    </p>
+    <p>
+      <button type="submit">Reserve Table</button>
+    </p>
+  </form>
+</section>
+```
+
+  </main>
+
+  <!-- Footer with address and links -->
+
+  <footer>
+    <address>
+      Riverside Bistro — 123 River Lane, Townsville<br />
+      Phone: <a href="tel:+1234567890">+1 234 567 890</a>
+    </address>
+    <p>
+      Follow us:
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>

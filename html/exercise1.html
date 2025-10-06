@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio — Student Exercise</title>
+</head>
+<body>
+
+  <!-- Header with site title and navigation -->
+
+  <header>
+    <h1>Alex Johnson — Web Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About section with image and paragraph -->
+    <section id="about">
+      <h2>About Me</h2>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200" alt="Portrait" />
+        <figcaption>Alex Johnson — front-end learner</figcaption>
+      </figure>
+      <p>Hello! I'm Alex, a student learning HTML and web fundamentals. I enjoy building small websites and experimenting with layouts. Below are a few of my projects.</p>
+    </section>
+
+```
+<!-- Projects section: list of projects with links -->
+<section id="projects">
+  <h2>Projects</h2>
+  <p>Click a project to view details:</p>
+  <ul>
+    <li><a href="#project1">Project One — Photo Gallery</a></li>
+    <li><a href="#project2">Project Two — To-do App</a></li>
+    <li><a href="#project3">Project Three — Personal Blog</a></li>
+  </ul>
+
+  <!-- Project details using article -->
+  <article id="project1">
+    <h3>Project One — Photo Gallery</h3>
+    <p>A simple image gallery built with HTML and basic JavaScript (no CSS for this exercise).</p>
+    <p>Preview images:</p>
+    <ul>
+      <li><img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=120" alt="gallery image 1" /></li>
+      <li><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=120" alt="gallery image 2" /></li>
+      <li><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=120" alt="gallery image 3" /></li>
+    </ul>
+  </article>
+
+  <article id="project2">
+    <h3>Project Two — To-do App</h3>
+    <p>To-do list built with HTML form inputs and a bit of scripting to add items.</p>
+  </article>
+
+  <article id="project3">
+    <h3>Project Three — Personal Blog</h3>
+    <p>A small blog structure with posts written using semantic article elements.</p>
+  </article>
+</section>
+
+<!-- Contact section with a form -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form action="#" method="post">
+    <p>
+      <label for="name">Name:</label><br />
+      <input id="name" name="name" type="text" placeholder="Your name" />
+    </p>
+    <p>
+      <label for="email">Email:</label><br />
+      <input id="email" name="email" type="email" placeholder="you@example.com" />
+    </p>
+    <p>
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here"></textarea>
+    </p>
+    <p>
+      <button type="submit">Send Message</button>
+    </p>
+  </form>
+</section>
+```
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+    <p>&copy; <span>2025</span> Alex Johnson. <a href="#about">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
