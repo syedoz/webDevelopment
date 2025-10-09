@@ -1,0 +1,65 @@
+:root {
+    --themeColor: #1e202f;
+}
+
+
+
+/* Attribute Selector */
+.myForm input[type="text"] {
+    width: 40%;
+    display: block;
+    margin: 20px;
+    border-radius: 20px;
+} 
+
+/* Pseudo classes */
+.myForm input[type="text"]:focus {
+    outline: 0;
+}
+
+.myForm input[type="submit"]:hover {
+    padding: 20px;
+}
+
+/* Pseudo elements */
+.navigation {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #000;
+}
+
+.navigation li:last-child {
+    border: none;
+}
+
+.navigation li:first-child {
+    color: #ccc;
+}
+
+.navigation li:nth-child(2) {
+    color: #ababab;
+}
+
+/* Pseudo element selector */
+.table .column ul {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+.table .column li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.table .column:nth-child(2n) {
+    background: #ccc;
+}
