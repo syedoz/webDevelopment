@@ -1,0 +1,28 @@
+header {
+    overflow: auto;
+    max-width: 1216px;
+    margin: auto;
+
+    .logo {float: left;}
+    .nav {
+        float: left; margin-left: 360px;
+        ul {margin: 0; padding: 0;}
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 12px;
+
+            ul {display: none;}
+            li {display: block;}
+        }
+        a {text-decoration: none; color: #000;}
+    }
+    .mail-cta {
+        float: right;
+        background-color: #FF9900;
+        padding: 10px 20px;
+        
+        a {text-decoration: none; color: #fff;}
+        img {display: block; float: right;}
+    }
+}
