@@ -1,7 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
 header {
     overflow: auto;
     max-width: 1216px;
-    margin: auto;
+    margin: 64px auto 96px;
+
+    /* How vlaues work in CSS */
+    /* 
+    margin: 1px 1px 1px 1px; top right bottom left
+    margin: 1px 1px; top&bottom right&left
+    margin: 1px 1px 1px; top right&left bottom
+    margin: 1px; all 4 sides
+    */
 
     .logo {float: left;}
     .nav {
@@ -11,8 +25,43 @@ header {
             list-style-type: none;
             display: inline-block;
             margin: 12px;
+            font-weight: 500;
 
-            ul {display: none;}
+            &:hover {
+                ul {display: block;}
+            }
+
+            &.sub {
+                position: relative;
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 6px;
+                    right: -12px;
+                    width: 8px;
+                    height: 5px;
+                    background: url(../images/arrow.png) no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                padding-top: 15px;
+
+                li {
+                    margin: 0;
+                    background-color: #f4f4f4;
+                    border-bottom: 1px solid #eaeaea;
+                    padding: 12px 20px;
+
+                    &:hover {
+                        background-color: #ededed;
+                    }
+                }
+            }
             li {display: block;}
         }
         a {text-decoration: none; color: #000;}
@@ -22,7 +71,7 @@ header {
         background-color: #FF9900;
         padding: 10px 20px;
         
-        a {text-decoration: none; color: #fff;}
-        img {display: block; float: right;}
+        a {text-decoration: none; color: #fff; font-weight: 500;}
+        img {display: block; float: right; margin-left: 10px;}
     }
 }
