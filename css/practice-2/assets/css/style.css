@@ -4,6 +4,11 @@ html, body {
     font-family: Roboto;
 }
 
+.grid {
+    max-width: 1216px;
+    margin: auto;
+}
+
 header {
     overflow: auto;
     max-width: 1216px;
@@ -32,17 +37,18 @@ header {
             }
 
             &.sub {
-                position: relative;
+                padding-right: 14px;
                 &:after {
                     content: "";
                     display: block;
-                    position: absolute;
-                    top: 6px;
-                    right: -12px;
                     width: 8px;
                     height: 5px;
                     background: url(../images/arrow.png) no-repeat;
                     background-size: contain;
+                    position: relative;
+                    right: -66px;
+                    top: -13px;
+                    cursor: pointer;
                 }
             }
 
@@ -73,5 +79,17 @@ header {
         
         a {text-decoration: none; color: #fff; font-weight: 500;}
         img {display: block; float: right; margin-left: 10px;}
+    }
+}
+
+/* Section-1 */
+.section-1 {
+    .col-left {
+        float: left;
+        max-width: 410px;
+    }
+
+    .col-right {
+        float: right;
     }
 }
