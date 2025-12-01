@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer"
+    ;
+    background-color: #000;
+    padding: 20px;
+}
+
+.container div {
+    background-color: #fff;
+    border: 1px solid blue;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+}
+
+.item-c {
+    grid-area: sidebar;
+}
+
+.item-d {
+    grid-area: footer;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        grid-template-columns: auto auto;
+    }
+}
