@@ -9,6 +9,15 @@
     ;
     background-color: #000;
     padding: 20px;
+    
+    /* Shorthand property */
+    /* ================== */
+    /* grid-template: 
+    [row1-start] "header header header header" auto [row1-end]
+    [row2-start] "main main . sidebar" auto [row2-end]
+    [row3-start] "footer footer footer footer" auto [row3-end]
+    / 100px 100px 100px 100px
+    ; */
 }
 
 .container div {
