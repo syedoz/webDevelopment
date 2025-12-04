@@ -1,15 +1,32 @@
 .container {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
     grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer"
+    "header header header"
+    "main spacer sidebar"
+    "footer footer footer"
     ;
     background-color: #000;
     padding: 20px;
-    
+
+    /* align-content: space-around;
+    justify-content: start; */
+    /* place-content: space-around start; */
+    /* place-content: [align-content] [justify-content] */
+
+    /* justify-items: start; */
+    /* align-items: start; */
+    /* place-items: end start; */
+    /* place-items: [row] [columns]*/
+
+    /* column-gap: 20px;
+    row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+    /* gap: 20px 15px; */
+    /* gap: [row-gap] [column-gap]; */
+
     /* Shorthand property */
     /* ================== */
     /* grid-template: 
@@ -42,6 +59,10 @@
 
 .item-d {
     grid-area: footer;
+}
+
+.item-e {
+    grid-area: spacer;
 }
 
 @media (max-width: 1140px) {
